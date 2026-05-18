@@ -75,7 +75,7 @@ const ProjectsSection = () => {
                <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/20 to-[var(--color-tertiary)]/20"></div>
                
                <motion.div 
-                 className="w-full max-w-md aspect-[4/3] glass rounded-2xl shadow-2xl border-4 border-white/10 relative z-10 flex items-center justify-center overflow-hidden"
+                 className="w-full max-w-lg aspect-video glass rounded-2xl shadow-2xl border-4 border-white/10 relative z-10 flex items-center justify-center overflow-hidden"
                  whileHover={{ scale: 1.05 }}
                  transition={{ duration: 0.4 }}
                >
@@ -83,7 +83,7 @@ const ProjectsSection = () => {
                    <img 
                      src={featuredProject.image} 
                      alt={featuredProject.title} 
-                     className="w-full h-full object-cover"
+                     className="w-full h-full object-cover object-top"
                    />
                  ) : (
                    <div className="absolute inset-0 bg-gradient-to-tr from-[#1f2937] to-[#111827] flex flex-col">
