@@ -79,17 +79,25 @@ const ProjectsSection = () => {
                  whileHover={{ scale: 1.05 }}
                  transition={{ duration: 0.4 }}
                >
-                 <div className="absolute inset-0 bg-gradient-to-tr from-[#1f2937] to-[#111827] flex flex-col">
-                   <div className="h-8 border-b border-white/10 flex items-center px-4 gap-2">
-                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                 {featuredProject.image ? (
+                   <img 
+                     src={featuredProject.image} 
+                     alt={featuredProject.title} 
+                     className="w-full h-full object-cover"
+                   />
+                 ) : (
+                   <div className="absolute inset-0 bg-gradient-to-tr from-[#1f2937] to-[#111827] flex flex-col">
+                     <div className="h-8 border-b border-white/10 flex items-center px-4 gap-2">
+                       <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                       <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                       <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                     </div>
+                     <div className="flex-1 p-6 flex flex-col justify-center items-center text-white/50">
+                       <Activity size={48} className="mb-4 text-[var(--color-primary)] opacity-80" />
+                       <p className="font-mono text-sm text-center px-4">Loading Data Dashboard...<br/><br/>[Interactive Preview Available in Demo]</p>
+                     </div>
                    </div>
-                   <div className="flex-1 p-6 flex flex-col justify-center items-center text-white/50">
-                     <Activity size={48} className="mb-4 text-[var(--color-primary)] opacity-80" />
-                     <p className="font-mono text-sm text-center px-4">Loading Data Dashboard...<br/><br/>[Interactive Preview Available in Demo]</p>
-                   </div>
-                 </div>
+                 )}
                </motion.div>
             </div>
           </motion.div>

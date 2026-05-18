@@ -100,6 +100,7 @@ export const PORTFOLIO_DATA = {
       skillsGained: ["AI Agent Development", "Data Analysis & Visualization", "Prompt Engineering", "Automation", "Analytical Thinking"],
       github: "https://github.com/ezhil-kumaran-27/statbotpro",
       demo: "https://ezhil-kumaran-27-statbotpro.streamlit.app/",
+      image: "/statbot-dashboard.png",
       featured: true
     },
     {
@@ -112,7 +113,7 @@ export const PORTFOLIO_DATA = {
     {
       title: "ATM Mini Project",
       description: "A console-based ATM simulation project to understand core programming and logic concepts.",
-      techStack: ["C++", "OOPs"],
+      techStack: ["C++", "OOPs", "File Handling", "Data Structures"],
       github: "https://github.com/ezhil-kumaran-27/ATM-mini-project",
       featured: false
     }
