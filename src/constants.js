@@ -100,7 +100,7 @@ export const PORTFOLIO_DATA = {
       skillsGained: ["AI Agent Development", "Data Analysis & Visualization", "Prompt Engineering", "Automation", "Analytical Thinking"],
       github: "https://github.com/ezhil-kumaran-27/statbotpro",
       demo: "https://ezhil-kumaran-27-statbotpro.streamlit.app/",
-      image: "/statbot-dashboard.png",
+      image: "/statbot.png",
       featured: true
     },
     {
@@ -111,9 +111,9 @@ export const PORTFOLIO_DATA = {
       featured: false
     },
     {
-      title: "ATM Mini Project",
-      description: "A console-based ATM simulation project to understand core programming and logic concepts.",
-      techStack: ["C++", "OOPs", "File Handling", "Data Structures"],
+      title: "ATM Management System",
+      description: "An ATM Management System web application built with Python and Flask, featuring secure transactions and database integration.",
+      techStack: ["Python", "Flask", "PostgreSQL", "HTML", "CSS"],
       github: "https://github.com/ezhil-kumaran-27/ATM-mini-project",
       featured: false
     }
