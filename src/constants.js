@@ -99,7 +99,7 @@ export const PORTFOLIO_DATA = {
       features: ["Natural Language Querying", "Automated Data Analysis", "Dynamic Visualizations", "AI Agent Workflow", "Interactive Dashboard"],
       skillsGained: ["AI Agent Development", "Data Analysis & Visualization", "Prompt Engineering", "Automation", "Analytical Thinking"],
       github: "https://github.com/ezhil-kumaran-27/statbotpro",
-      demo: "https://ezhil-kumaran-27-statbotpro.streamlit.app/",
+      demo: "https://statbotpro-autonomouscsvdataagent.streamlit.app/",
       image: "/statbot.png",
       featured: true
     },
