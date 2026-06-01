@@ -46,7 +46,7 @@ export const PORTFOLIO_DATA = {
     programming: ["C", "C++", "Python"],
     frameworks: ["HTML5", "CSS3", "Flask", "REST APIs"],
     database: ["PostgreSQL"],
-    tools: ["Git", "GitHub", "Canva", "Microsoft Office", "Postman API", "ChatGPT"],
+    tools: ["Git", "GitHub", "Canva", "Microsoft Office", "Postman API", "ChatGPT", "Claude", "Antigravity", "Gemini", "Render", "Vercel", "Pinecone"],
     coreConcepts: ["OOPs", "Problem Solving", "Logical Thinking"],
     softSkills: ["Adaptability", "Patience", "Time Management", "Communication Skills", "Flexibility", "Positive Mindset", "Teamwork"]
   },

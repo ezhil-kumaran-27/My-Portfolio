@@ -45,7 +45,7 @@ const HeroSection = () => {
               <a href="#projects" className="px-8 py-3 bg-[var(--color-primary)] text-white rounded-full font-medium hover:opacity-90 transition-opacity flex items-center gap-2 shadow-lg">
                 View Projects <ArrowRight size={18} />
               </a>
-              <a href="/Ezhilkumaran Resume.pdf" download="Ezhilkumaran_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3 glass rounded-full font-medium hover:bg-[var(--border-color)] transition-colors flex items-center gap-2">
+              <a href="/Ezhilkumaran_M_Resume.pdf" download="Ezhilkumaran_M_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3 glass rounded-full font-medium hover:bg-[var(--border-color)] transition-colors flex items-center gap-2">
                 Download Resume <Download size={18} />
               </a>
             </div>
