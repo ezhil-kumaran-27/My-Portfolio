@@ -104,17 +104,27 @@ export const PORTFOLIO_DATA = {
       featured: true
     },
     {
-      title: "REST API Backend using Flask",
-      description: "A robust backend system built with Python and Flask for handling data efficiently.",
-      techStack: ["Python", "Flask", "PostgreSQL"],
-      github: "https://github.com/ezhil-kumaran-27/rest-api-backend-flask",
+      title: "ShelfMart – Full-Stack Online Bookstore",
+      description: "A full-stack e-commerce bookstore application featuring JWT authentication, admin management, cart functionality, and a responsive modern user experience.",
+      techStack: ["React", "Flask", "PostgreSQL", "Tailwind CSS"],
+      github: "https://github.com/ezhil-kumaran-27/ShelfMart-BookStore",
+      demo: "https://shelfmart-bookstore.vercel.app/",
       featured: false
     },
     {
-      title: "ATM Mini Project",
-      description: "A console-based ATM simulation project to understand core programming and logic concepts.",
-      techStack: ["Python", "HTML", "CSS"],
-      github: "https://github.com/ezhil-kumaran-27/ATM-mini-project",
+      title: "DocuMind Enterprise",
+      description: "An AI-powered enterprise knowledge assistant that transforms company documents into an intelligent, searchable chatbot with accurate, citation-backed answers.",
+      techStack: ["React", "FastAPI", "OpenAI", "Pinecone"],
+      github: "https://github.com/ezhil-kumaran-27/DocuMind-Enterprise",
+      demo: "https://documind-enterprise-sop.vercel.app/",
+      featured: false
+    },
+    {
+      title: "ViralGen AI (Under Development)",
+      description: "An AI-powered marketing platform that transforms product briefs into engaging ad copy and AI-generated visuals for social media campaigns.",
+      techStack: ["React", "FastAPI", "PostgreSQL", "Celery", "Groq API"],
+      github: "#",
+      demo: "#",
       featured: false
     }
   ]

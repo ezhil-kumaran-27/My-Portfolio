@@ -115,12 +115,20 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] flex items-center justify-center text-[var(--color-primary)] shadow-sm">
-                  <ExternalLink size={24} />
-                </div>
-                <a href={project.github} className="opacity-50 hover:opacity-100 hover:text-[var(--color-primary)] transition-colors">
-                  <FaGithub size={24} />
-                </a>
+                {project.demo && project.demo !== "#" ? (
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] flex items-center justify-center text-[var(--color-primary)] shadow-sm hover:scale-110 transition-transform cursor-pointer">
+                    <ExternalLink size={24} />
+                  </a>
+                ) : (
+                  <div className="w-12 h-12 rounded-xl bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] flex items-center justify-center text-[var(--color-primary)] shadow-sm">
+                    <ExternalLink size={24} />
+                  </div>
+                )}
+                {project.github && project.github !== "#" && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="opacity-50 hover:opacity-100 hover:text-[var(--color-primary)] transition-colors">
+                    <FaGithub size={24} />
+                  </a>
+                )}
               </div>
               
               <h3 className="text-xl font-bold mb-3 group-hover:text-[var(--color-primary)] transition-colors">{project.title}</h3>

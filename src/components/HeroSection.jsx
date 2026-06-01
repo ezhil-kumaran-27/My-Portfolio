@@ -23,7 +23,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-xl md:text-2xl font-bold mb-2 text-[var(--accent-color)]">Hello, I'm</h2>
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-[var(--accent-color)]">{name}</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 text-[var(--accent-color)] break-words">{name}</h1>
             
             <div className="h-12 mb-6">
               <motion.div
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <a href="#projects" className="px-8 py-3 bg-[var(--color-primary)] text-white rounded-full font-medium hover:opacity-90 transition-opacity flex items-center gap-2 shadow-lg">
                 View Projects <ArrowRight size={18} />
               </a>
-              <a href="/resume.pdf" download="Ezhilkumaran_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3 glass rounded-full font-medium hover:bg-[var(--border-color)] transition-colors flex items-center gap-2">
+              <a href="/Ezhilkumaran Resume.pdf" download="Ezhilkumaran_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3 glass rounded-full font-medium hover:bg-[var(--border-color)] transition-colors flex items-center gap-2">
                 Download Resume <Download size={18} />
               </a>
             </div>
