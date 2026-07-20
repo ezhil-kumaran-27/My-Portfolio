@@ -39,10 +39,10 @@ export const PORTFOLIO_DATA = {
   certifications: [
     { name: "Build AI-powered application using RAG Pipelines (Ingestion and Inference)", provider: "Creozen Ltd", grade: "Participation", image: "/creozen-certificate.jpg" },
     { name: "Introduction to Industry 4.0 and Industrial IoT", provider: "NPTEL", grade: "Elite + Silver, 80%", image: "/nptel-iot-certificate.jpg" },
-    { name: "Cloud Computing and Distributed Systems", provider: "NPTEL", grade: "Elite Grade – 66%" },
-    { name: "Introduction to C", provider: "SoloLearn", grade: "Completed" },
-    { name: "Machine Learning 101", provider: "GUVI", grade: "Completed" },
-    { name: "Deep Learning using PyTorch", provider: "GUVI HCL", grade: "Completed" }
+    { name: "Cloud Computing and Distributed Systems", provider: "NPTEL", grade: "Elite Grade – 66%", image: "/nptel-cloud-computing.jpg" },
+    { name: "Introduction to C", provider: "SoloLearn", grade: "Completed", image: "/sololearn-c.jpg" },
+    { name: "Machine Learning 101", provider: "GUVI", grade: "Completed", image: "/guvi-ml-101.jpg" },
+    { name: "Deep Learning using PyTorch", provider: "GUVI HCL", grade: "Completed", image: "/guvi-pytorch.jpg" }
   ],
   skills: {
     programming: ["C", "C++", "Python"],
