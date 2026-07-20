@@ -37,6 +37,8 @@ export const PORTFOLIO_DATA = {
     }
   ],
   certifications: [
+    { name: "Build AI-powered application using RAG Pipelines (Ingestion and Inference)", provider: "Creozen Ltd", grade: "Participation", image: "/creozen-certificate.jpg" },
+    { name: "Introduction to Industry 4.0 and Industrial IoT", provider: "NPTEL", grade: "Elite + Silver, 80%", image: "/nptel-iot-certificate.jpg" },
     { name: "Cloud Computing and Distributed Systems", provider: "NPTEL", grade: "Elite Grade – 66%" },
     { name: "Introduction to C", provider: "SoloLearn", grade: "Completed" },
     { name: "Machine Learning 101", provider: "GUVI", grade: "Completed" },
@@ -51,6 +53,18 @@ export const PORTFOLIO_DATA = {
     softSkills: ["Adaptability", "Patience", "Time Management", "Communication Skills", "Flexibility", "Positive Mindset", "Teamwork"]
   },
   experience: [
+    {
+      title: "Front-End Web Development Intern",
+      company: "Tekno Spot",
+      duration: "Jul 2026 – Dec 2026",
+      description: [
+        "Developed responsive web applications using React.js, Next.js, JavaScript, and Tailwind CSS.",
+        "Integrated REST APIs and Firebase to build dynamic frontend features.",
+        "Collaborated with designers and developers to implement responsive UI components.",
+        "Fixed bugs, improved application performance, and followed modern frontend development best practices.",
+        "Worked in a collaborative development environment using Git and agile workflows."
+      ]
+    },
     {
       title: "Data Associate L1",
       company: "Infotact Solution Data",

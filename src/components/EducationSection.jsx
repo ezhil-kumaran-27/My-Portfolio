@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PORTFOLIO_DATA } from '../constants';
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, Award, ExternalLink } from 'lucide-react';
 
 const EducationSection = () => {
   const { education, certifications } = PORTFOLIO_DATA;
@@ -66,19 +66,31 @@ const EducationSection = () => {
               {certifications.map((cert, index) => (
                 <motion.div 
                   key={index}
-                  className="glass p-6 rounded-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group"
+                  className="glass p-6 flex flex-col h-full rounded-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[var(--color-secondary)] to-transparent opacity-20 rounded-bl-full group-hover:scale-150 transition-transform duration-500"></div>
-                  <Award className="text-[var(--color-secondary)] mb-4 opacity-50" size={24} />
+                  <Award className="text-[var(--color-secondary)] mb-4 opacity-50 shrink-0" size={24} />
                   <h4 className="font-semibold text-md mb-2">{cert.name}</h4>
-                  <p className="text-sm opacity-70 mb-2">{cert.provider}</p>
-                  <span className="inline-block px-3 py-1 text-xs font-medium bg-[var(--color-secondary)] text-white rounded-full">
-                    {cert.grade}
-                  </span>
+                  <p className="text-sm opacity-70 mb-2 flex-grow">{cert.provider}</p>
+                  <div className="flex items-center justify-between mt-auto pt-4">
+                    <span className="inline-block px-3 py-1 text-xs font-medium bg-[var(--color-secondary)] text-white rounded-full">
+                      {cert.grade}
+                    </span>
+                    {cert.image && (
+                      <a 
+                        href={cert.image} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 text-sm font-medium text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
+                      >
+                        View <ExternalLink size={14} />
+                      </a>
+                    )}
+                  </div>
                 </motion.div>
               ))}
             </div>
