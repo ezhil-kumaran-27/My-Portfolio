@@ -27,7 +27,7 @@ export const PORTFOLIO_DATA = {
       degree: "B.Tech Artificial Intelligence & Data Science",
       institution: "Gnanamani College of Technology",
       year: "Graduation Year: 2027",
-      score: "CGPA: 9.03"
+      score: "CGPA: 9.05 Upto 6th Semester"
     },
     {
       degree: "Higher Secondary Education (Maths and Computer Science)",
